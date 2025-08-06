@@ -50,6 +50,8 @@ public class Car {
             return new CarStatus("Key does not match the car's automaker.");
         }
 
+        engine.setAutomaker(this.automaker);
+
         return new CarStatus("Car started successfully with key: " + engine);
     }
 }
